@@ -1,4 +1,5 @@
 body, html {
+    font-family: "Raleway", sans-serif;
     height: 100%;
     margin: 0;
     display: flex;
@@ -8,6 +9,19 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+h1, h2, h3, h4{
+    color: #554339;
+    margin: 0;
+    text-align: center;
+}
+p{
+    margin: 0;
+    color: #7f624f;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .card-container {
@@ -24,13 +38,14 @@ body, html {
     backdrop-filter: blur(16.5px);
     -webkit-backdrop-filter: blur(16.5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     position: absolute;
-    top: 0;
-    left: 0;
+    cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    flex-direction: column;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    /* Puedes usar overflow: auto; si quieres que aparezcan barras de desplazamiento cuando el contenido se desborde */
+    padding: 10px 20px; /* Añade un poco de espacio interno */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
 }
