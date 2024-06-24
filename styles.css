@@ -1,24 +1,36 @@
 body, html {
     height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url('img/fondo 3.jpg');
-    background-size: cover; /* Mantiene la proporción y llena el contenedor */
-    background-position: center; /* Centra la imagen */
-    width: 99%;
-    height: 99%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.card-container {
+    position: relative;
+    width: 300px;
+    height: 450px;
+}
+
 .centered-div {
     width: 300px;
     height: 450px;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 1px 32px 0 #bfab93;
-    backdrop-filter: blur( 16.5px );
-    -webkit-backdrop-filter: blur( 16.5px );
+    backdrop-filter: blur(16.5px);
+    -webkit-backdrop-filter: blur(16.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
